@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectTeamActivity">
+
+    <!-- MYTEAM -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/text_select"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="50dp"
+            android:background="#CBE5FD"
+            android:gravity="center"
+            android:text="팀 선택"
+            android:textSize="20dp" />
+
+
+
+        <LinearLayout
+            android:id="@+id/row1"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_below="@id/text_select"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp" android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/team1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_oval_button"
+                android:text="SSG" android:gravity="center" android:textSize="15dp"/>
+
+            <Button
+                android:id="@+id/team2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_oval_button"
+                android:text="키움" android:gravity="center" android:textSize="15dp"/>
+
+            <Button
+                android:id="@+id/team3"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_oval_button"
+                android:text="LG" android:gravity="center" android:textSize="15dp"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row2"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_below="@id/row1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp" android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/team4"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_oval_button"
+                android:text="KT" android:gravity="center" android:textSize="15dp"/>
+
+            <Button
+                android:id="@+id/team5"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_oval_button"
+                android:text="KIA" android:gravity="center" android:textSize="15dp"/>
+
+            <Button
+                android:id="@+id/team6"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_oval_button"
+                android:text="NC" android:gravity="center" android:textSize="15dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row3"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_below="@id/row2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp" android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/team7"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_oval_button"
+                android:text="삼성" android:gravity="center" android:textSize="15dp"/>
+
+            <Button
+                android:id="@+id/team8"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_oval_button"
+                android:text="롯데" android:gravity="center" android:textSize="15dp"/>
+
+            <Button
+                android:id="@+id/team9"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_oval_button"
+                android:text="두산" android:gravity="center" android:textSize="15dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/team10"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/row3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/shape_oval_button"
+            android:text="한화" android:gravity="center" android:textSize="15dp"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
