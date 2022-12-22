@@ -37,7 +37,7 @@ public class CalendarActivity extends AppCompatActivity {
     TextView titleView, matchInfo, savedDiaryView, noMatchInfo;
     EditText editDiaryView;
     CheckBox liveCheck;
-    Button scoreButton, saveButton, cancelButton, editButton, delButton;
+    Button expandButton, scoreButton, saveButton, cancelButton, editButton, delButton;
     String tDiary, fileName, filePath;
 
     @Override
@@ -57,6 +57,7 @@ public class CalendarActivity extends AppCompatActivity {
         buttonsView2 = findViewById(R.id.layoutButtons2);
         matchInfo = findViewById(R.id.matchInfo);
         liveCheck = findViewById(R.id.liveCheck);
+        expandButton = findViewById(R.id.expandButton);
         scoreButton = findViewById(R.id.scoreButton);
         editDiaryView = findViewById(R.id.editDiary);
         savedDiaryView = findViewById(R.id.savedDiary);
@@ -98,6 +99,13 @@ public class CalendarActivity extends AppCompatActivity {
                 }
                 else
                     liveCheck.setChecked(false);
+            }
+        });
+        expandButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tDiary = editDiaryView.getText().toString();
+
             }
         });
         saveButton.setOnClickListener(new View.OnClickListener() {
